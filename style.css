@@ -72,7 +72,6 @@ html {
   margin-top: 20px;
 }
 
-
 .header-right {
   float: right;
   margin-right: -250px;
@@ -114,7 +113,7 @@ html {
 
 .main-wrapper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/image/main-background.jpg');
+    url('https://image.freepik.com/free-photo/coffee-beans-with-props-making-coffee_1220-4536.jpg');
   background-size: cover;
   padding: 400px 0 100px 0;
   text-align: center;
