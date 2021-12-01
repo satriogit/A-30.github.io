@@ -185,10 +185,10 @@ html {
 .left-item {
   position: relative;
   margin-bottom: 50px;
+  text-align: right;
 }
 
 .left-content h5 {
-  text-align: right;
   font-size: 20px;
   font-weight: 400;
 }
@@ -241,10 +241,12 @@ html {
 
 .right-content h5 {
   font-size: 20px;
+  font-weight: 400;
 }
 
 .right-content p {
   font-size: 15px;
+  font-weight: 300;
   padding-top: 10px;
   line-height: 25px;
   font-family: 'Open Sans', sans-serif;
