@@ -72,9 +72,6 @@ html {
   margin-top: 20px;
 }
 
-.page-header::before {
-  transition: background-color 200ms linear;
-}
 
 .header-right {
   float: right;
