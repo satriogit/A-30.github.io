@@ -26,7 +26,7 @@ div {
 }
 
 html {
-  height: 5000px;
+  height: auto;
 }
 
 .container {
@@ -38,8 +38,7 @@ html {
 
 .header-left {
   float: left;
-  margin-left: -250px;
-  margin-top: -10px;
+  margin-left: 50px;
 }
 
 .logo-left {
@@ -48,7 +47,6 @@ html {
   text-decoration: none;
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
-  text-align: center;
   display: flex;
 }
 
@@ -66,15 +64,15 @@ html {
 
 .page-header {
   position: fixed;
-  display: inline-block;
-  width: 100%;
   height: 60px;
   margin-top: 20px;
+  display: block;
+  width: 100%;
+  z-index: 9999;
 }
 
 .header-right {
   float: right;
-  margin-right: -250px;
 }
 
 .header-list {
@@ -117,7 +115,16 @@ html {
   background-size: cover;
   padding: 400px 0 100px 0;
   text-align: center;
+  width: 100%;
   padding-bottom: 300px;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-top {
+  width: 100%;
 }
 
 .main-wrapper h1 {
@@ -169,23 +176,29 @@ html {
     rgb(94, 67, 6) 100%
   );
   font-family: 'Marcellus', serif;
-  padding: 100px 0 600px 0;
+  height: 600px;
 }
 
-.mid-body {
-  text-align: center;
+.container-body {
+  width: 1170px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .left-body {
-  width: 30%;
   color: #fff;
+  width: 30%;
   float: left;
+  position: relative;
 }
 
 .left-item {
-  position: relative;
   margin-bottom: 50px;
   text-align: right;
+}
+
+.left-content {
+  width: 100%;
 }
 
 .left-content h5 {
@@ -193,7 +206,6 @@ html {
   font-weight: 400;
 }
 .left-content p {
-  text-align: right;
   font-size: 15px;
   font-weight: 300;
   padding-top: 10px;
@@ -203,9 +215,9 @@ html {
 
 .icon-left {
   position: absolute;
-  top: -13px;
-  padding-left: 360px;
-  float: left;
+  display: inline-block;
+  margin-top: -90px;
+  padding-left: 15px;
 }
 
 .icon-left img {
@@ -221,22 +233,26 @@ html {
   margin-top: -20px;
   text-align: center;
 }
+
 .mid-body img {
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .right-body {
-  text-align: left;
-  width: 250px;
   color: #fff;
-  float: right;
   width: 30%;
+  float: right;
 }
 
 .right-item {
   position: relative;
   margin-bottom: 50px;
+  text-align: left;
+}
+
+.right-content {
+  width: 100%;
 }
 
 .right-content h5 {
@@ -254,11 +270,288 @@ html {
 
 .icon-right {
   position: absolute;
+  display: inline-block;
   top: 0;
-  margin-left: -62px;
+  margin-left: -65px;
 }
 
 .icon-right img {
   width: 50px;
+  height: auto;
+}
+
+/* ---------------- bottom content ------------------ */
+
+.bottom-wrapper {
+  background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h3-img-3.jpg');
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 150px;
+}
+
+.bottom-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.testim-header {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+  letter-spacing: 50px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+}
+
+.testim-content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.testim-box {
+  z-index: 2;
+  padding: 20px 30px;
+}
+
+.testim-content h3 {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+}
+
+.testim-box > p {
+  color: rgb(255, 255, 255);
+  font-family: 'Marcellus', serif;
+  font-style: italic;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.testim-box-content span {
+  font-style: italic;
+}
+
+/* 
+------------------- FOOTER ------------------ */
+.page-footer {
+  background-image: url('https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 300px;
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.content-footer {
+  text-align: center;
+}
+
+.top-footer {
+  padding-top: 100px;
+  display: inline-block;
+}
+
+.top-footer h5 {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Marcellus', serif;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.top-footer img {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  margin-left: -250px;
+}
+
+.bottom-footer {
+  background-color: rgb(0, 0, 0);
+  min-height: 100px;
+  display: block;
+  width: 100%;
+}
+
+.bottom-content {
+  color: #fff;
+  display: flex;
+}
+
+.copyright {
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.copyright p {
+  font-size: 25px;
+}
+
+.social-media {
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+.social-media img {
+  width: 40px;
+  height: auto;
+}
+
+.social-media a {
+  margin-right: 50px;
+  display: block;
+}
+
+/* --------- BURGER MENU ---------- */
+
+.burger {
+  position: relative;
+  float: right;
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.burger:after {
+  content: 'Menu';
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*--------------------------------------
+ Creates the look of the burger icon
+ using the inner span and pseudo-elements
+--------------------------------------*/
+.burger span,
+.burger span:before,
+.burger span:after {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+  width: 40px;
+  height: 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.2em;
+}
+
+/* Reset the left and create the pseudo-element */
+.burger span:before,
+.burger span:after {
+  content: '';
+  left: 0;
+}
+
+/* Top bar position */
+.burger span:before {
+  top: -8px;
+}
+
+/* Bottom bar position */
+.burger span:after {
+  top: 8px;
+}
+
+/* Get rid of more on action (IE9 or higher) */
+
+/* Get rid of the middle bar on action (IE9 or higher) */
+
+.burger-check:checked + .burger span {
+  height: 0;
+  width: 0;
+}
+
+/* Moves the top and bottom bars to the middle on action (IE9 or higher) */
+.burger-check:checked + .burger span:before,
+.burger-check:checked + .burger span:after {
+  top: 6px;
+}
+
+/* Rotates the top bar on action with full browser support (IE9 or higher) */
+.burger-check:checked + .burger span:before {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* Rotates the bottom bar on action with full browser support (IE9 or higher) */
+.burger-check:checked + .burger span:after {
+  -webkit-transform: rotate(-225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(-225deg);
+}
+
+.b-header {
+  position: relative;
+  float: right;
+  width: calc(100% - 20px);
+  margin: 0;
+  margin-top: -20px;
+  min-height: 50px;
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  width: 100%;
+  font-family: 'Marcellus', serif;
+}
+
+.b-header ul {
+  position: relative;
+  float: right;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b-header ul a {
+  position: relative;
+  float: right;
+  width: 100%;
+  height: 0;
+  line-height: 50px;
+  padding: 0 15px;
+  text-decoration: none;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+  text-align: right;
+}
+
+.b-header ul a:hover,
+.b-header ul a:active,
+.b-header ul a:focus,
+.b-header ul a:visited {
+  text-decoration: none;
+  background: #fff;
+}
+
+.b-header ul a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Animate height of 'a' element in order to reveal the menu on check (IE9 or higher) */
+#main-nav:checked ~ ul a {
   height: 50px;
+}
+
+.burger-check {
+  display: none;
 }

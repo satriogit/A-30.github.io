@@ -1,0 +1,152 @@
+@media all and (max-width: 1178px) {
+  .container {
+    width: 100%;
+  }
+
+  .container-body {
+    width: 100%;
+  }
+
+  .bottom-container {
+    width: 80%;
+  }
+  .testim-header {
+    font-size: 40px;
+    letter-spacing: 40px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .body-wrapper {
+    height: 1000px;
+  }
+
+  .mid-body {
+    display: block;
+    width: 60%;
+    padding-top: 200px;
+  }
+  .left-body {
+    float: right;
+    width: 40%;
+  }
+  .left-item {
+    text-align: left;
+  }
+  .icon-left {
+    margin-left: -80px;
+  }
+  .right-body {
+    float: right;
+    width: 40%;
+  }
+
+  .testim-header {
+    font-size: 30px;
+    letter-spacing: 30px;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .header-left,
+  .header-right {
+    display: none;
+  }
+
+  .testim-content {
+    display: inline-block;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .mid-body {
+    display: none;
+  }
+
+  .left-body {
+    width: 80%;
+  }
+
+  .left-item {
+    text-align: left;
+  }
+  .icon-left {
+    margin-left: -80px;
+  }
+
+  .right-body {
+    width: 80%;
+  }
+
+  .container-body {
+    width: 80%;
+  }
+
+  .testim-header {
+    font-size: 20px;
+    letter-spacing: 20px;
+  }
+
+  .page-footer {
+    width: 100%;
+  }
+  .page-footer h5 {
+    font-size: 20px;
+  }
+
+  .location img,
+  .telephone img,
+  .email img {
+    width: 30px;
+    margin-left: -180px;
+  }
+
+  .bottom-content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-media {
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+
+@media all and (max-width: 428px) {
+  .testim-header {
+    letter-spacing: 10px;
+  }
+
+   .page-footer h5 {
+    font-size: 15px;
+  }
+
+  .location img,
+  .telephone img,
+  .email img {
+    width: 23px;
+    margin-left: -130px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .testim-header {
+    letter-spacing: 3px;
+  }
+
+  .main-wrapper h1 {
+    font-size: 50px;
+  }
+
+  .main-wrapper p {
+  font-size: 17px;
+}
+}
+
+@media all and (min-width: 920px) {
+  .b-header {
+    display: none;
+  }
+}
